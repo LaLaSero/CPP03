@@ -1,19 +1,19 @@
 #include "ClapTrap.hpp"
-#include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
 int main(void)
 {
 
-	ScavTrap a;
-	ScavTrap b("named");
+	FragTrap a;
+	FragTrap b("named");
 
 
 	a.attack("named");
 	a.takeDamage(5);
 	a.beRepaired(3);
-	a.guardGate();
+	a.highFivesGuys();
 	b.takeDamage(3);
-	b.guardGate();
+	b.highFivesGuys();
 
 	std::cout << std::endl;
 
