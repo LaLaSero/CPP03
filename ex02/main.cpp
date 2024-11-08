@@ -29,5 +29,7 @@ int main(void)
 	std::cout << " energy points: "  << b.getEnergyPoints() << std::endl;
 	std::cout << " attack damage: "  << b.getAttackDamage() << std::endl;
 
+	std::cout << std::endl;
+
 	return 0;
 }
