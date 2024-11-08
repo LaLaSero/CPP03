@@ -42,6 +42,17 @@ FragTrap::~FragTrap()
 	std::cout << "FragTrap destructor for name: "<< _name << " called." << std::endl;
 }
 
+void FragTrap::attack(std::string const & target)
+{
+	if (_energy_points > 0 && _hit_points > 0)
+	{
+		_energy_points -= 1;
+		std::cout << "FragTrap " << _name << " attacks " << target << ", causing " << _attack_damage << " points of damage!" << std::endl;
+	}
+	else
+		std::cout << "FragTrap " << _name << " is out of energy points!" << std::endl;
+}
+
 void FragTrap::highFivesGuys(void)
 {
 	std::cout << "FragTrap " << _name << " high five guys here." << std::endl;
