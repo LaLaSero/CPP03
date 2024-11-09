@@ -15,15 +15,12 @@ ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 	_energy_points = 50;
 	_attack_damage = 20;
 	_guard_gate = false;
-	_name = name;
 	std::cout << "ScavTrap name constructor for name: " << _name << " called" << std::endl;
 }
 
-ScavTrap::ScavTrap(const ScavTrap &copy) : ClapTrap(copy)
+ScavTrap::ScavTrap(const ScavTrap &copy) : ClapTrap(copy), _guard_gate(copy._guard_gate)
 {
-	_guard_gate = copy._guard_gate;
 	std::cout << "ScavTrap copy constructor for name:"<< _name <<" called" << std::endl;
-	*this = copy;
 }
 
 ScavTrap &ScavTrap::operator=(const ScavTrap &copy)

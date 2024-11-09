@@ -19,11 +19,9 @@ FragTrap::FragTrap(std::string name) : ClapTrap(name)
 	std::cout << "FragTrap name constructor for name: " << _name << " called" << std::endl;
 }
 
-FragTrap::FragTrap(const FragTrap &copy) : ClapTrap(copy)
+FragTrap::FragTrap(const FragTrap &copy) : ClapTrap(copy), _high_fives(copy._high_fives)
 {
-	_high_fives = copy._high_fives;
 	std::cout << "FragTrap copy constructor for name:"<< _name <<" called" << std::endl;
-	*this = copy;
 }
 
 FragTrap &FragTrap::operator=(const FragTrap &copy)

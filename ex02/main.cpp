@@ -5,10 +5,10 @@
 int main(void)
 {
 		{
-		ClapTrap a;
-		ClapTrap b("named");
+		ClapTrap a("Alice");
+		ClapTrap b("Bob");
 
-		a.attack("named");
+		a.attack("Bob");
 		a.takeDamage(5);
 		a.beRepaired(3);
 
@@ -30,11 +30,11 @@ int main(void)
 	}
 	std::cout << "=================================================" << std::endl;
 	{
-		ScavTrap a;
-		ScavTrap b("named");
+		ScavTrap a("Alice");
+		ScavTrap b("Bob");
 
 
-		a.attack("named");
+		a.attack("Bob");
 		a.takeDamage(5);
 		a.beRepaired(3);
 		a.guardGate();
@@ -59,10 +59,10 @@ int main(void)
 	}
 	std::cout << "=================================================" << std::endl;
 	{
-		FragTrap a;
-		FragTrap b("named");
+		FragTrap a("Alice");
+		FragTrap b("Bob");
 
-		a.attack("named");
+		a.attack("Bob");
 		a.takeDamage(5);
 		a.beRepaired(3);
 		a.highFivesGuys();
